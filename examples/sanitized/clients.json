@@ -1,0 +1,47 @@
+[
+  {
+    "source": "fixture",
+    "observed_at": "2026-05-01T00:00:00Z",
+    "site_id": "site-north",
+    "client_id": "client-north-1",
+    "client_name": "fixture-client-a",
+    "mac": "02:00:00:10:00:01",
+    "ip": "203.0.113.10",
+    "connected_to_device_id": "ap-north-1",
+    "rssi": -55,
+    "tx_rate": 480.0,
+    "rx_rate": 520.0,
+    "status": "online",
+    "metadata": {}
+  },
+  {
+    "source": "fixture",
+    "observed_at": "2026-05-01T00:00:00Z",
+    "site_id": "site-north",
+    "client_id": "client-north-2",
+    "client_name": "fixture-client-b",
+    "mac": "02:00:00:10:00:02",
+    "ip": "203.0.113.11",
+    "connected_to_device_id": "ap-north-1",
+    "rssi": -61,
+    "tx_rate": 240.0,
+    "rx_rate": 260.0,
+    "status": "online",
+    "metadata": {}
+  },
+  {
+    "source": "fixture",
+    "observed_at": "2026-05-01T00:00:00Z",
+    "site_id": "site-harbor",
+    "client_id": "client-harbor-1",
+    "client_name": "fixture-client-c",
+    "mac": "02:00:00:20:00:01",
+    "ip": "203.0.113.20",
+    "connected_to_device_id": "ap-harbor-1",
+    "rssi": -67,
+    "tx_rate": 160.0,
+    "rx_rate": 180.0,
+    "status": "online",
+    "metadata": {}
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "source": "fixture",
+    "event_id": "evt-001",
+    "timestamp": "2026-05-03T08:00:00Z",
+    "site_id": "site-north",
+    "scope_type": "access_point",
+    "scope_id": "ap-north-1",
+    "event_type": "ap_offline",
+    "severity": "critical",
+    "message": "Access point offline after insufficient PoE output warning.",
+    "raw_ref": "fixture-events:evt-001",
+    "metadata": {"affected_client_count": 2}
+  },
+  {
+    "source": "fixture",
+    "event_id": "evt-002",
+    "timestamp": "2026-05-03T08:20:00Z",
+    "site_id": "site-north",
+    "scope_type": "access_point",
+    "scope_id": "ap-north-1",
+    "event_type": "ap_online",
+    "severity": "info",
+    "message": "Access point returned online.",
+    "raw_ref": "fixture-events:evt-002",
+    "metadata": {}
+  },
+  {
+    "source": "fixture",
+    "event_id": "evt-003",
+    "timestamp": "2026-05-03T08:25:00Z",
+    "site_id": "site-north",
+    "scope_type": "access_point",
+    "scope_id": "ap-north-1",
+    "event_type": "ap_offline",
+    "severity": "critical",
+    "message": "Access point offline again after PoE budget alarm.",
+    "raw_ref": "fixture-events:evt-003",
+    "metadata": {"affected_client_count": 2}
+  },
+  {
+    "source": "fixture",
+    "event_id": "evt-004",
+    "timestamp": "2026-05-03T08:35:00Z",
+    "site_id": "site-north",
+    "scope_type": "access_point",
+    "scope_id": "ap-north-1",
+    "event_type": "ap_online",
+    "severity": "info",
+    "message": "Access point returned online after injector replacement.",
+    "raw_ref": "fixture-events:evt-004",
+    "metadata": {}
+  },
+  {
+    "source": "fixture",
+    "event_id": "evt-005",
+    "timestamp": "2026-05-10T12:05:00Z",
+    "site_id": "site-harbor",
+    "scope_type": "site",
+    "scope_id": "site-harbor",
+    "event_type": "wan_down",
+    "severity": "critical",
+    "message": "WAN carrier outage detected; gateway entered failover.",
+    "raw_ref": "fixture-events:evt-005",
+    "metadata": {"affected_client_count": 1}
+  },
+  {
+    "source": "fixture",
+    "event_id": "evt-006",
+    "timestamp": "2026-05-10T12:50:00Z",
+    "site_id": "site-harbor",
+    "scope_type": "site",
+    "scope_id": "site-harbor",
+    "event_type": "wan_restored",
+    "severity": "info",
+    "message": "WAN restored and gateway returned to primary path.",
+    "raw_ref": "fixture-events:evt-006",
+    "metadata": {}
+  },
+  {
+    "source": "fixture-siem",
+    "event_id": "evt-007",
+    "timestamp": "2026-05-18T21:15:00Z",
+    "site_id": "site-north",
+    "scope_type": "access_point",
+    "scope_id": "ap-north-1",
+    "event_type": "rf_interference",
+    "severity": "warning",
+    "message": "RF interference and high airtime utilization observed on access point.",
+    "raw_ref": "fixture-events:evt-007",
+    "metadata": {"affected_client_count": 2}
+  }
+]
