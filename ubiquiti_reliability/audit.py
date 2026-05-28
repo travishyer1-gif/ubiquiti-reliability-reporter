@@ -21,6 +21,7 @@ SECRET_PATTERNS = (
 )
 DISALLOWED_DIRS = {".pytest_cache", "__pycache__", ".mypy_cache", ".ruff_cache"}
 DISALLOWED_SUFFIXES = {".pyc", ".pyo"}
+IGNORED_DIRS = {".git", ".hg", ".svn"}
 
 
 @dataclass
@@ -44,6 +45,8 @@ def audit_public_repo(root: str | Path) -> PublicAuditResult:
     for path in sorted(project_root.rglob("*")):
         rel = path.relative_to(project_root)
         parts = set(rel.parts)
+        if parts & IGNORED_DIRS:
+            continue
         if path.is_dir() and path.name in DISALLOWED_DIRS:
             warnings.append(f"{rel}: generated cache directory should be removed before publishing")
             continue
